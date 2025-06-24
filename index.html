@@ -89,6 +89,22 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
+.logo {
+  max-height: 120px;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo-container {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .logo-container {
+    padding: 0 10px;
+  }
+}
 
 
   </style>
@@ -96,7 +112,7 @@ h1 {
 <body>
   <header>
 <h1>Smart Life Hacks, Brainy Tips, and Tiny Habits That Work – TadaTips</h1>
-    <img src="tadatips-logo.png" style="max-height: 120px;" alt="Micro Hacks & Micro Tips">
+    <div class="logo-container"><img src="tadatips-logo.png" style="max-height: 120px;" alt="Micro Hacks & Micro Tips"></div>
     <p class="tagline">✨ A curated collection of clever micro-tips to boost focus, simplify life, and spark small wins — from productivity hacks to curious facts.</p>
   </header>
 
